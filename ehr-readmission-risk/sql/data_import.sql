@@ -1,5 +1,5 @@
-INSERT INTO cleaned_data (column1, column2, column3, ..., readmitted)
-SELECT column1, column2, column3, ..., 
+INSERT INTO cleaned_data (column1, column2, column3, readmitted)
+SELECT column1, column2, column3, 
        CASE 
            WHEN readmission_date IS NOT NULL AND DATEDIFF(day, admission_date, readmission_date) <= 30 THEN 1 
            ELSE 0 

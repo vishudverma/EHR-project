@@ -1,5 +1,3 @@
-Sure, here's the contents for the file: /ehr-readmission-risk/ehr-readmission-risk/sql/queries.sql
-
 -- SQL queries for data analysis and retrieval
 
 -- Query to retrieve the count of readmissions
@@ -33,9 +31,8 @@ FROM patient_data
 WHERE readmitted = 1;
 
 -- Query to retrieve the top 5 most common diagnoses for readmitted patients
-SELECT diagnosis, COUNT(*) AS count
+SELECT TOP 5 diagnosis, COUNT(*) AS count
 FROM patient_data
 WHERE readmitted = 1
 GROUP BY diagnosis
-ORDER BY count DESC
-LIMIT 5;
+ORDER BY count DESC;
