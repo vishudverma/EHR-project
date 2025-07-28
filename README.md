@@ -34,8 +34,8 @@ This project aims to develop a readmission risk model using the UCI Diabetes dat
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd ehr-readmission-risk
+   git clone https://github.com/vishudverma/EHR-project.git
+   cd EHR-project
    ```
 
 2. Install the required dependencies:
