@@ -1,0 +1,25 @@
+name: ehr-readmission
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyter
+  - pytest
+  - black
+  - flake8
+  - python-dotenv
+  - sqlalchemy
+  - psycopg2
+  - pip
+  - pip:
+    - shap
+    - lime
+    - mlflow

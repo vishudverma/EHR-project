@@ -1,0 +1,14 @@
+#core eda packages
+pandas
+numpy
+
+#core visualization packages
+matplotlib
+seaborn
+plotly
+
+#core ml packages
+scikit-learn
+
+#core sql packages
+sqlalchemy
