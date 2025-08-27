@@ -12,3 +12,7 @@ scikit-learn
 
 #core sql packages
 sqlalchemy
+
+#additional packages
+jupyter
+requests
