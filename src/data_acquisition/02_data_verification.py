@@ -24,7 +24,7 @@ def validate_schema():
     india_hospital_admissions_dataset = pd.read_csv(os.path.join(data_path, 'HDHI Admission data.csv'))
 
 
-print(f"Data path is set to: {data_path}")
+print(f"Data path is set to: {data_path}, checking if the datasets are accessible\n If the program throws no error it is successful\n If it throws an error please check the /src/data_acquisition/01_data_acquisition.py file for the download functions and ensure the datasets are downloaded correctly.")
 validate_schema()
 
 # This verifies that all the datasets are loaded correctly and can be read using the required libraries.
