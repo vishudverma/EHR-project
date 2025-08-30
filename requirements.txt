@@ -17,3 +17,4 @@ sqlalchemy
 kagglehub
 jupyter
 requests
+zipfile
