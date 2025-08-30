@@ -48,6 +48,7 @@ def download_kaggle_datasets(kaggle_urls=kaggle_urls, raw_data_dir=raw_data_dir)
                 with open(src_file, "rb") as fsrc, open(dest_file, "wb") as fdst:
                     fdst.write(fsrc.read())
                 print(f"Copied {file} to {raw_data_dir}")
+        os.remove(dataset_path)  # Clean up the zip files
 
 
 def download_web_datasets(dwnld_urls=dwnld_urls, raw_data_dir=raw_data_dir):
