@@ -7,6 +7,7 @@ import os
 # Source: CDC NHANES - Demographic Variables and Sample Weights 2021-2022
 # Source: Kaggle - Hospital Admissions Dataset(India based)
 # Source: Kaggle - Pima Indians Diabetes Database
+# Using only the first three datasets will compliment them with synthetic data for hospital readmissions.
 
 
 # Note: You need to have Kaggle API installed and configured with your Kaggle account credentials to download datasets from Kaggle.
@@ -17,7 +18,8 @@ dwnld_urls = [
     "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt"
 ]
 kaggle_urls = [
-    "uciml/pima-indians-diabetes-database",
+    # "uciml/pima-indians-diabetes-database",
+    # "mascarenhasneil/hmis-india-201920-monthly",
     "ashishsahani/hospital-admissions-data"
 ]
 
