@@ -12,9 +12,10 @@ scikit-learn
 
 #core sql packages
 sqlalchemy
+pyodbc
 
 #additional packages for data acquisition
 kagglehub
 jupyter
 requests
-zipfile
+# zipfile
