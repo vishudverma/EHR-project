@@ -19,7 +19,7 @@ dwnld_urls = [
 ]
 kaggle_urls = [
     # "uciml/pima-indians-diabetes-database",
-    # "mascarenhasneil/hmis-india-201920-monthly",
+    "mascarenhasneil/hmis-india-201920-monthly",
     "ashishsahani/hospital-admissions-data"
 ]
 
