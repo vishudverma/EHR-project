@@ -1,6 +1,6 @@
 import os
 import zipfile
-import pandas as pd
+import pandas as pd #type:ignore
 
 #TODO: add the rest of the functions to check whether the downloaded data is of the required quality and schema, verify the completeness, and generate a report.
 

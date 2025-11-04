@@ -1,5 +1,5 @@
-import requests
-import kagglehub
+import requests # type:ignore
+import kagglehub # type: ignore
 import os
 
 # Download of datasets from open sources

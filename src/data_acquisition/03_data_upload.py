@@ -1,18 +1,19 @@
 import os
-import sqlalchemy
-import pandas as pd
-import pyodbc
+import sqlalchemy # type:ignore
+import pandas as pd # type:ignore
+import pyodbc # type:ignore
 
 # Using the server name available on the system and using the windows authentication options
 SERVER = 'VISHUD_LAPTOP\\SQLEXPRESS' # Change the `SERVER` and `DATABASE` name as suited for your project 
-DATABASE = 'Portfolio'
+DATABASE = 'ehr_readmission'
 DRIVER = 'ODBC Driver 17 for SQL Server'
 
 # Creating the engine to connect
 engine = sqlalchemy.create_engine(f"mssql+pyodbc:///?odbc_connection=DRIVER={{{DRIVER}}};SERVER={SERVER};DATABASE={DATABASE};Trusted_Connection=yes;")
 
+# The data thats inputed here is primarily cleaned using the /notebooks/01_eda_initial.ipynb
 # Create the data files for the import 
-raw_data_folder = os.path.abspath('data/00_raw')
+raw_data_folder = os.path.abspath('data/01_interim')
 file_list = os.listdir(raw_data_folder)
 
 for file in file_list:
@@ -35,6 +36,7 @@ for file in file_list:
         try:
             df = pd.read_sas(file_path)
             table_name = f"raw_{os.path.splitext(file)[0]}"  # Remove file extension from table name
+            # ToDo: make the data have csv extensions and not other formats cause pyodbc cannot handle other formats.
             df.to_sql(
                 name=table_name,
                 con=engine,
