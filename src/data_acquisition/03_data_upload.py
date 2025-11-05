@@ -1,7 +1,6 @@
 import os
 import sqlalchemy # type:ignore
 import pandas as pd # type:ignore
-import pyodbc # type:ignore
 
 # Using the server name available on the system and using the windows authentication options
 SERVER = 'VISHUD_LAPTOP\\SQLEXPRESS' # Change the `SERVER` and `DATABASE` name as suited for your project 

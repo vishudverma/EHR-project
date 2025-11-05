@@ -12,7 +12,6 @@ scikit-learn
 
 #core sql packages
 sqlalchemy
-pyodbc
 
 #additional packages for data acquisition
 kagglehub
