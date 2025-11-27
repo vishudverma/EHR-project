@@ -63,4 +63,4 @@ dashboard/Tableau/*.twb
 Thumbs.db
 
 # Jupyter Notebooks
-notebooks/* # Adding these cause they will keep changing continuously
+notebooks/* 
