@@ -9,36 +9,31 @@ This project aims to develop a readmission risk model using the UCI Diabetes dat
 - **data/**: Contains raw and processed datasets.
   - **raw/**: Original dataset from the UCI Machine Learning Repository.
   - **processed/**: Cleaned and processed dataset after data cleaning operations.
-  
 - **src/**: Source code for data acquisition, cleaning, and utility functions.
-  - **data_acquisition/**: Functions to load data and perform database operations.
-  - **data_cleaning/**: Functions for preprocessing and feature engineering.
-  - **utils/**: Utility functions for logging and data validation.
-  
+  - **`data_acquisition/`**: Functions to load data and perform database operations.
+  - **`data_cleaning/`**: Functions for preprocessing and feature engineering.
+  - **`utils/`**: Utility functions for logging and data validation.
 - **sql/**: SQL scripts for database operations.
-  - **create_tables.sql**: Commands to create necessary tables in the SQL database.
-  - **data_import.sql**: Commands for importing cleaned data into the SQL database.
-  - **queries.sql**: Various queries for data analysis and retrieval.
-  
+  - **`create_tables.sql`**: Commands to create necessary tables in the SQL database.
+  - **`data_import.sql`**: Commands for importing cleaned data into the SQL database.
+  - **`queries.sql`**: Various queries for data analysis and retrieval.
 - **notebooks/**: Jupyter notebook for exploratory data analysis (EDA).
-  
 - **config/**: Configuration settings for the project.
-  
 - **requirements.txt**: Lists the Python dependencies required for the project.
-  
 - **.env**: Stores environment variables for sensitive information.
-  
 - **.gitignore**: Specifies files and directories to be ignored by Git.
 
 ## Setup Instructions
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/vishudverma/EHR-project.git
    cd EHR-project
    ```
 
 2. Install the required dependencies:
+
    ```
    pip install -r requirements.txt
    ```
