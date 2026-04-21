@@ -19,9 +19,9 @@ This project aims to develop a readmission risk model using the UCI Diabetes dat
   - **`queries.sql`**: Various queries for data analysis and retrieval.
 - **notebooks/**: Jupyter notebook for exploratory data analysis (EDA).
 - **config/**: Configuration settings for the project.
-- **requirements.txt**: Lists the Python dependencies required for the project.
-- **.env**: Stores environment variables for sensitive information.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
+- **`requirements.txt`**: Lists the Python dependencies required for the project.
+- **`.env`**: Stores environment variables for sensitive information.
+- **`.gitignore`**: Specifies files and directories to be ignored by Git.
 
 ## Setup Instructions
 
