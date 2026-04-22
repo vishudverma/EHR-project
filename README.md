@@ -54,3 +54,5 @@ This project aims to develop a readmission risk model using the UCI Diabetes dat
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+More updates and the idea of this project is now being expanded.
